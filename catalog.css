@@ -1,0 +1,152 @@
+.pic_back{
+    width: 100%;
+    height: 200px;
+    background-image: url('images/pic_cut.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 2px solid rgba(195, 220, 231, 0.55);
+}
+.pic_back span{
+    font-size: 5em;
+    font-weight: bold;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+/* Main */
+.catalog_container{
+    width: 100%;
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.filters{
+    position: sticky;
+    float: left;
+    min-width: 16em;
+    margin: 0 2em;
+    display: flex;
+    flex-direction: column;
+}
+.filter{
+    margin-bottom: 2em;
+}
+.filters {
+    height: min-content;
+    position: sticky;
+    float: left;
+    top: 80px;
+}
+
+.form_radio_group {
+    display: flex;
+    flex-direction: column;
+}
+.form_radio_group-item {
+    overflow: hidden;
+    display: flex;
+
+}
+.form_radio_group input[type=radio] {
+    display: none;
+}
+.form_radio_group label {
+    width: 100%;
+    min-width: 12em;
+    height: 100%;
+    cursor: pointer;
+    padding: 0.3em;
+    user-select: none;
+    border-radius: 5px;
+    border: 1px solid rgb(250, 172, 198);
+
+    margin: 3px 0;
+}
+
+/*.form_radio_group .form_radio_group-item:first-child label {
+    border-radius: 6px 0 0 6px;
+}
+.form_radio_group .form_radio_group-item:last-child label {
+    border-radius: 0 6px 6px 0;
+    border-right: 1px solid #999;
+}*/
+
+/* Checked */
+.form_radio_group input[type=radio]:checked + label {
+    background: #fccdd5;
+
+    color: rgb(255, 76, 135);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #fff8fd;
+
+    border: 2px solid rgb(255, 76, 135);
+}
+
+/* Hover */
+.form_radio_group label:hover {
+    color: #ff5d91;
+    font-weight: bold;
+    border-color: rgb(255, 76, 135);
+}
+
+/* Disabled */
+.form_radio_group input[type=radio]:disabled + label {
+
+    opacity: 80%;
+    color: rgba(126, 124, 124, 0.85);
+    background: rgba(215, 206, 209, 0.48);
+    font-weight: normal;
+    border-color: #b9b0b2;
+}
+
+
+.price_range{
+    display: inline-block;
+}
+.price_range label{
+    margin: 2px;
+}
+.price_range input{
+    width: 4em;
+    max-width: 7em;
+    font-size: 1.3em;
+    border-radius: 5px;
+}
+fieldset{
+    border-radius: 5px;
+    border-color: rgb(250, 172, 198);
+}
+
+/*GRID PRODUCTS*/
+
+.products {
+    grid-area: products;
+    box-sizing: border-box;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 0.7em;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 2em;
+    border-radius: 20px;
+    background: #ffc8e4;
+}
+
+.item > img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid white;
+}

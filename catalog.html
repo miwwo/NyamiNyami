@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="catalog.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>NyamiNyami</title>
+    <link rel="icon" href="images/caticon.ico" sizes="any">
+
+</head>
+<body  onload="slider()">
+<header class="nav">
+    <div class = "header_logo">
+        NyamiNyami
+    </div>
+    <input id="menu-toggle" type="checkbox"/>
+    <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+    </label>
+    <ul class="menu">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Вопросы</a></li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
+</header>
+<div class = "wrapper">
+    <div class = "pic_back"> <span>КАТАЛОГ</span></div>
+
+    <main>
+        
+        <div class = "catalog_container">
+            <div class = "filters">
+                <div class="filter categories">
+                    <h3>Категории</h3>
+                    <div class="form_radio_group">
+                        <div class="form_radio_group-item">
+                            <input id="radio-1" type="radio" name="radio" value="1">
+                            <label for="radio-1">Мармелад</label>
+                        </div>
+                        <div class="form_radio_group-item">
+                            <input id="radio-2" type="radio" name="radio" value="2">
+                            <label for="radio-2">Леденцы</label>
+                        </div>
+                        <div class="form_radio_group-item">
+                            <input id="radio-3" type="radio" name="radio" value="3">
+                            <label for="radio-3">Сладкие боксы</label>
+                        </div>
+                        <div class="form_radio_group-item">
+                            <input id="radio-4" type="radio" name="radio" value="4" disabled>
+                            <label for="radio-4">Японские сладости</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter price">
+                    <fieldset><legend><h3>Цена</h3></legend>
+                        <div class = "price_range">
+                            <label for="min_price"></label>
+                            <input id = "min_price" type="text" name="min_price">
+                            <label for="max_price">-</label>
+                            <input id = "max_price" type="text" name="max_price" >
+                        </div>
+                    </fieldset>
+
+                </div>
+            </div>
+            <div class = "catalog">
+
+            </div>
+            <div class = "products">
+                <div class="item i1">
+                    <img src="catalog/keks1.jpg" alt="Image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere ac ut consequat semper viverra nam libero.
+                    </p>
+                </div>
+                <div class="item i1">
+                    <img src="catalog/keks1.jpg" alt="Image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere ac ut consequat semper viverra nam libero.
+                    </p>
+                </div>
+                <div class="item i1">
+                    <img src="catalog/keks1.jpg" alt="Image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere ac ut consequat semper viverra nam libero.
+                    </p>
+                </div>
+                <div class="item i1">
+                    <img src="catalog/keks1.jpg" alt="Image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere ac ut consequat semper viverra nam libero.
+                    </p>
+                </div>
+                <div class="item i1">
+                    <img src="catalog/keks1.jpg" alt="Image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere ac ut consequat semper viverra nam libero.
+                    </p>
+                </div>
+                <div class="item i1">
+                    <img src="catalog/keks1.jpg" alt="Image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere ac ut consequat semper viverra nam libero.
+                    </p>
+                </div>
+                <div class="item i1">
+                    <img src="catalog/keks1.jpg" alt="Image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere ac ut consequat semper viverra nam libero.
+                    </p>
+                </div>
+                <div class="item i1">
+                    <img src="catalog/keks1.jpg" alt="Image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere ac ut consequat semper viverra nam libero.
+                    </p>
+                </div>
+                <div class="item i1">
+                    <img src="catalog/keks1.jpg" alt="Image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere ac ut consequat semper viverra nam libero.
+                    </p>
+                </div>
+                <div class="item i1">
+                    <img src="catalog/keks1.jpg" alt="Image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere ac ut consequat semper viverra nam libero.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+<footer>
+    <div class = "contact_info" id = "contact_info">
+        <div class = "social_media">
+            <h2>Social Media</h2>
+            <a href="https://vk.com/qwqccxbybn5"><img  src = "/images/vk.png" alt = "vk_icon"></a>
+            <a href="https://github.com/miwwo"> <img  src="images/github.png" alt = "github_icon"> </a>
+            <img src="images/instagram.png" alt = "instagram_icon">
+        </div>
+        <address>
+            <a href="tel:89771730136">Связаться по телефону: 8-977-173-01-36</a> <br>
+            <a href="mailto:xiao.rar@yandex.ru">Связаться по почте: miwwoHG@gmail.com</a><br>
+        </address>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>

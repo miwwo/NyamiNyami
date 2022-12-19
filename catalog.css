@@ -263,3 +263,7 @@ fieldset{
         width: 4em;
     }
 }
+
+.hidden {
+    display: none !important;
+}

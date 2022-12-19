@@ -40,19 +40,19 @@
                     <h3>Категории</h3>
                     <div class="form_radio_group">
                         <div class="form_radio_group-item">
-                            <input  id="radio-1" type="radio" name="radio" value="1">
+                            <input class="type_rb" id="radio-1" type="radio" name="radio" value="marmalade_section">
                             <label for="radio-1">Мармелад</label>
                         </div>
                         <div class="form_radio_group-item">
-                            <input id="radio-2" type="radio" name="radio" value="2">
-                            <label for="radio-2">Леденцы</label>
+                            <input class="type_rb" id="radio-2" type="radio" name="radio" value="drinks_section">
+                            <label for="radio-2">Напитки</label>
                         </div>
                         <div class="form_radio_group-item">
-                            <input id="radio-3" type="radio" name="radio" value="3">
+                            <input class="type_rb" id="radio-3" type="radio" name="radio" value="boxes_section">
                             <label for="radio-3">Сладкие боксы</label>
                         </div>
                         <div class="form_radio_group-item">
-                            <input id="radio-4" type="radio" name="radio" value="4" disabled>
+                            <input class="type_rb" id="radio-4" type="radio" name="radio" value="japanese_sweets_section" disabled>
                             <label for="radio-4">Японские сладости</label>
                         </div>
                     </div>
@@ -62,167 +62,175 @@
                     <fieldset><legend><h3>Цена</h3></legend>
                         <div class = "price_range">
                             <label for="min_price"></label>
-                            <input id = "min_price" type="text" name="min_price">
+                            <input id = "min_price" type="text" name="min_price" placeholder="0">
                             <label for="max_price">-</label>
-                            <input id = "max_price" type="text" name="max_price" >
+                            <input id = "max_price" type="text" name="max_price" placeholder="..." >
                         </div>
                     </fieldset>
 
                 </div>
             </div>
             <div class = "products_container">
-                <h1 id = "marmalade_section">Мармелад</h1>
-                <div class = "products">
-                    <div class="product_card" id="1">
-                        <div class="img_container">
-                            <img src="catalog/m1.jpg" alt="product image">
+                <div class = "prod_section" id = "marmalade_section">
+                    <h1>Мармелад</h1>
+                    <div class = "products">
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="catalog/m1.jpg" alt="product image">
+                            </div>
+                            <h3>Кисленькие колечки</h3>
+                            <div class="card_description">
+                                <p>100г. В наличии</p>
+                            </div>
+                            <div class="card_buttons">
+                                <label class="cost_label">155₽</label>
+                                <input type="image" src="images/heart.png" alt="Кнопка в корзину">
+                            </div>
                         </div>
-                        <h3>Кисленькие колечки</h3>
-                        <div class="card_description">
-                            <p>100г. В наличии</p>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="catalog/m2.jpg" alt="product image">
+                            </div>
+                            <h3>Клубничные половинки</h3>
+                            <div class="card_description">
+                                <p>100г. В наличии</p>
+                            </div>
+                            <div class="card_buttons">
+                                <label class="cost_label">155₽</label>
+                                <input type="image" src="images/heart.png" alt="Кнопка в корзину">
+                            </div>
                         </div>
-                        <div class="card_buttons">
-                            <label class="cost_label">155₽</label>
-                            <input id = "button" type="image" src="images/heart.png" alt="Кнопка в корзину">
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="catalog/m3.jpg" alt="product image">
+                            </div>
+                            <h3>Волшебные бобы</h3>
+                            <div class="card_description">
+                                <p>100г. В наличии</p>
+                            </div>
+                            <div class="card_buttons">
+                                <label class="cost_label">199₽</label>
+                                <input type="image" src="images/heart.png" alt="Кнопка в корзину">
+                            </div>
                         </div>
-                    </div>
-                    <div class="product_card" id="1">
-                        <div class="img_container">
-                            <img src="catalog/m2.jpg" alt="product image">
-                        </div>
-                        <h3>Клубничные половинки</h3>
-                        <div class="card_description">
-                            <p>100г. В наличии</p>
-                        </div>
-                        <div class="card_buttons">
-                            <label class="cost_label">155₽</label>
-                            <input id = "button" type="image" src="images/heart.png" alt="Кнопка в корзину">
-                        </div>
-                    </div>
-                    <div class="product_card" id="1">
-                        <div class="img_container">
-                            <img src="catalog/m3.jpg" alt="product image">
-                        </div>
-                        <h3>Волшебные бобы</h3>
-                        <div class="card_description">
-                            <p>100г. В наличии</p>
-                        </div>
-                        <div class="card_buttons">
-                            <label class="cost_label">199₽</label>
-                            <input id = "button" type="image" src="images/heart.png" alt="Кнопка в корзину">
-                        </div>
-                    </div>
-                    <div class="product_card" id="1">
-                        <div class="img_container">
-                            <img src="catalog/m4.jpg" alt="product image">
-                        </div>
-                        <h3>Радужные кусочки</h3>
-                        <div class="card_description">
-                            <p>100г. В наличии</p>
-                        </div>
-                        <div class="card_buttons">
-                            <label class="cost_label">155₽</label>
-                            <input id = "button" type="image" src="images/heart.png" alt="Кнопка в корзину">
-                        </div>
-                    </div>
-                </div>
-                <h1 id = "candies">Напитки</h1>
-                <div class = "products">
-                    <div class="product_card" id="1">
-                        <div class="img_container">
-                            <img src="catalog/n1.jpg" alt="product image">
-                        </div>
-                        <h3>Газированный напиток Чупа-Чупс с дыней</h3>
-                        <div class="card_description">
-                            <p>250мл. В наличии</p>
-                        </div>
-                        <div class="card_buttons">
-                            <label class="cost_label">200₽</label>
-                            <input id = "button" type="image" src="images/heart.png" alt="Кнопка в корзину">
-                        </div>
-                    </div>
-                    <div class="product_card" id="1">
-                        <div class="img_container">
-                            <img src="catalog/n2.png" alt="product image">
-                        </div>
-                        <h3>Газированный напиток Чупа-Чупс с апельсином</h3>
-                        <div class="card_description">
-                            <p>250мл. В наличии</p>
-                        </div>
-                        <div class="card_buttons">
-                            <label class="cost_label">200₽</label>
-                            <input id = "button" type="image" src="images/heart.png" alt="Кнопка в корзину">
-                        </div>
-                    </div>
-                    <div class="product_card" id="1">
-                        <div class="img_container">
-                            <img src="catalog/n3.jpg" alt="product image">
-                        </div>
-                        <h3>Рамунэ с клубникой</h3>
-                        <div class="card_description">
-                            <p>250мл. Нет в наличии</p>
-                        </div>
-                        <div class="card_buttons">
-                            <label class="cost_label">250₽</label>
-                            <input id = "button" type="image" src="images/heart.png" alt="Кнопка в корзину">
-                        </div>
-                    </div>
-                    <div class="product_card" id="1">
-                        <div class="img_container">
-                            <img src="catalog/n4.jpg" alt="product image">
-                        </div>
-                        <h3>Sangaria Дыня 350мл</h3>
-                        <div class="card_description">
-                            <p>250мл. В наличии</p>
-                        </div>
-                        <div class="card_buttons">
-                            <label class="cost_label">200₽</label>
-                            <input id = "button" type="image" src="images/heart.png" alt="Кнопка в корзину">
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="catalog/m4.jpg" alt="product image">
+                            </div>
+                            <h3>Радужные кусочки</h3>
+                            <div class="card_description">
+                                <p>100г. В наличии</p>
+                            </div>
+                            <div class="card_buttons">
+                                <label class="cost_label">155₽</label>
+                                <input type="image" src="images/heart.png" alt="Кнопка в корзину">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <h1 id = "boxes">Сладкие боксы</h1>
-                <div class = "products">
-                    <div class="product_card" id="1">
-                        <div class="img_container">
-                            <img src="catalog/b1.png" alt="product image">
+                <div class = "prod_section" id = "drinks_section">
+                    <h1>Напитки</h1>
+                    <div class = "products">
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="catalog/n1.jpg" alt="product image">
+                            </div>
+                            <h3>Газированный напиток Чупа-Чупс с дыней</h3>
+                            <div class="card_description">
+                                <p>250мл. В наличии</p>
+                            </div>
+                            <div class="card_buttons">
+                                <label class="cost_label">200₽</label>
+                                <input type="image" src="images/heart.png" alt="Кнопка в корзину">
+                            </div>
                         </div>
-                        <h3>MEGABOX с мармеладом</h3>
-                        <div class="card_description">
-                            <p>1,5кг. Нет в наличии</p>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="catalog/n2.png" alt="product image">
+                            </div>
+                            <h3>Газированный напиток Чупа-Чупс с апельсином</h3>
+                            <div class="card_description">
+                                <p>250мл. В наличии</p>
+                            </div>
+                            <div class="card_buttons">
+                                <label class="cost_label">200₽</label>
+                                <input type="image" src="images/heart.png" alt="Кнопка в корзину">
+                            </div>
                         </div>
-                        <div class="card_buttons">
-                            <label class="cost_label">2590₽</label>
-                            <input id = "button" type="image" src="images/heart.png" alt="Кнопка в корзину">
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="catalog/n3.jpg" alt="product image">
+                            </div>
+                            <h3>Рамунэ с клубникой</h3>
+                            <div class="card_description">
+                                <p>250мл. Нет в наличии</p>
+                            </div>
+                            <div class="card_buttons">
+                                <label class="cost_label">250₽</label>
+                                <input type="image" src="images/heart.png" alt="Кнопка в корзину">
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="catalog/n4.jpg" alt="product image">
+                            </div>
+                            <h3>Sangaria Дыня 350мл</h3>
+                            <div class="card_description">
+                                <p>250мл. В наличии</p>
+                            </div>
+                            <div class="card_buttons">
+                                <label class="cost_label">200₽</label>
+                                <input type="image" src="images/heart.png" alt="Кнопка в корзину">
+                            </div>
                         </div>
                     </div>
-                    <div class="product_card" id="1">
-                        <div class="img_container">
-                            <img src="catalog/b2.png" alt="product image">
+                </div>
+                <div class = "prod_section" id = "boxes_section">
+                    <h1>Сладкие боксы</h1>
+                    <div class = "products">
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="catalog/b1.png" alt="product image">
+                            </div>
+                            <h3>MEGABOX с мармеладом</h3>
+                            <div class="card_description">
+                                <p>1,5кг. Нет в наличии</p>
+                            </div>
+                            <div class="card_buttons">
+                                <label class="cost_label">2590₽</label>
+                                <input type="image" src="images/heart.png" alt="Кнопка в корзину">
+                            </div>
                         </div>
-                        <h3>BOX с мармеладом (с окном)</h3>
-                        <div class="card_description">
-                            <p>800г. В наличии</p>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="catalog/b2.png" alt="product image">
+                            </div>
+                            <h3>BOX с мармеладом (с окном)</h3>
+                            <div class="card_description">
+                                <p>800г. В наличии</p>
+                            </div>
+                            <div class="card_buttons">
+                                <label class="cost_label">1259₽</label>
+                                <input type="image" src="images/heart.png" alt="Кнопка в корзину">
+                            </div>
                         </div>
-                        <div class="card_buttons">
-                            <label class="cost_label">1259₽</label>
-                            <input id = "button" type="image" src="images/heart.png" alt="Кнопка в корзину">
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="catalog/b3.png" alt="product image">
+                            </div>
+                            <h3>Мини BOX с мармеладом</h3>
+                            <div class="card_description">
+                                <p>550г. В наличии</p>
+                            </div>
+                            <div class="card_buttons">
+                                <label class="cost_label">535₽</label>
+                                <input type="image" src="images/heart.png" alt="Кнопка в корзину">                        </div>
                         </div>
-                    </div>
-                    <div class="product_card" id="1">
-                        <div class="img_container">
-                            <img src="catalog/b3.png" alt="product image">
-                        </div>
-                        <h3>Мини BOX с мармеладом</h3>
-                        <div class="card_description">
-                            <p>550г. В наличии</p>
-                        </div>
-                        <div class="card_buttons">
-                            <label class="cost_label">535₽</label>
-                            <input id = "button" type="image" src="images/heart.png" alt="Кнопка в корзину">                        </div>
-                    </div>
 
+                    </div>
                 </div>
+
+
 
 
             </div>

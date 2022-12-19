@@ -1,0 +1,160 @@
+.pic_back{
+    width: 100%;
+    height: 200px;
+    background-image: url('images/back.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 2px solid rgba(241, 91, 174, 0.55);
+}
+.pic_back span{
+    font-size: 5em;
+    font-weight: bold;
+    color: #ffffff;
+    opacity: 0.9;
+}
+.container{
+    padding: 1%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.aboutshop{
+    padding: 1%;
+}
+.container p{
+    margin: 0;
+    text-indent: 20px;
+}
+.container h2{
+    width: 100%;
+    background:#fccdd5;
+
+    color: rgb(255, 255, 255);
+    font-weight:bold;
+    text-shadow:2px 1px 0px rgb(255,76,135);
+
+    border:3px solid rgb(255,76,135);
+    border-radius: 7px;
+    margin-left: 2px;
+    margin-bottom:10px;
+    text-align: center;
+
+}
+#free-delivery{
+    font-size: 1em;
+    width: 100%;
+    background: #9bc7d7;
+    opacity: 0.6;
+
+    color: rgb(255, 255, 255);
+    font-weight:bold;
+    text-shadow:2px 1px 0px rgb(77, 99, 108);
+
+    border:10px solid rgb(39, 104, 128);
+
+    text-align: center;
+}
+.container h3{
+    padding: 1% 1%;
+}
+.registration{
+    display: flex;
+    max-height: 350px;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1% 1%;
+}
+.registration img{
+    clip-path: circle();
+    width: 100%;
+    max-width: 300px;
+}
+.submitform{
+    display: flex;
+    justify-content: center;
+}
+.submitform .submit {
+    width: 80%;
+    height: max-content;
+    position: relative;
+    background: #f8e1ec;
+
+    border-radius: 8px;
+}
+.submitform h3{
+    width: 100%;
+    font-size: 2.2em;
+
+    color: rgb(255, 255, 255);
+    font-weight:bold;
+    text-shadow:2px 1px 0px rgb(255,76,135);
+    display: inline-block;
+    margin-bottom: 20px;
+    border-bottom: 3px solid rgba(238, 92, 143, 0.47);
+}
+form {
+    padding: 50px 30px;
+
+}
+input {
+    width: 100%;
+    height: 2.5em;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background: #f3cad3;
+    color: rgba(234, 64, 121, 0.48);
+}
+button {
+    margin-bottom: 15px;
+    background: #f3cad3;
+    color: rgba(185, 41, 89, 0.48);
+    border-radius: 20px;
+    width: 100px;
+    height: 2.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    scale:1.1;
+    color: #f3cad3;
+    background: rgba(185, 41, 89, 0.48) ;
+}
+form p {
+    font-size: 12px;
+}
+form p a {
+    color: #DDDDDD;
+    text-decoration: none;
+    position: relative;
+    border-bottom: 1px solid #DDDDDD;
+}
+@media (max-width: 770px) {
+    .registration{
+        flex-direction:column;
+    }
+    .submitform {
+        height: calc(100vh - 40px);
+    }
+    .submitform .submit {
+        width: 100%;
+    }
+    .pic_container{
+        display: none;
+    }
+    .
+}
+@media (max-width: 580px) {
+    .registration{
+        flex-direction:column;
+    }
+    .submitform .submit {
+        width: 80%;
+    }
+}

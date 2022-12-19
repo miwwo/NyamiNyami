@@ -17,6 +17,9 @@
 }
 
 /* Main */
+main{
+    text-align: center;
+}
 .catalog_container{
     width: 100%;
     margin-top: 1.5em;
@@ -70,14 +73,6 @@
 
     margin: 3px 0;
 }
-
-/*.form_radio_group .form_radio_group-item:first-child label {
-    border-radius: 6px 0 0 6px;
-}
-.form_radio_group .form_radio_group-item:last-child label {
-    border-radius: 0 6px 6px 0;
-    border-right: 1px solid #999;
-}*/
 
 /* Checked */
 .form_radio_group input[type=radio]:checked + label {
@@ -193,6 +188,7 @@ fieldset{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     padding: 2%;
 }
 .cost_label {
@@ -203,8 +199,11 @@ fieldset{
 
 .card_buttons input{
     margin-left: 0.5em;
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
+}
+.card_buttons input:hover{
+    scale: 1.2;
 }
 .cost_label {
     font-size: 38px;

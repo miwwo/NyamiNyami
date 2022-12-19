@@ -230,8 +230,9 @@ address a{
     color: #fccdd5;
 }
 
-@media (max-width: 690px){
+@media (max-width: 810px){
     address{
         display: none;
     }
 }
+

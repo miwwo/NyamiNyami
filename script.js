@@ -1,6 +1,5 @@
 let min_price = document.querySelector('#min_price');
 let max_price = document.querySelector('#max_price');
-let radio_buttons = document.querySelectorAll('.type_rb');
 
 function filter_by_cost() {
     let cards = document.querySelectorAll('.product_card');
@@ -23,7 +22,10 @@ max_price.addEventListener('change', function () {
 min_price.addEventListener('change', function () {
     filter_by_cost();
 });
+
+
 /* Фильтр по категориям */
+let radio_buttons = document.querySelectorAll('.type_rb');
 let sections = document.querySelectorAll('.prod_section');
 
 radio_buttons.forEach(rb => {

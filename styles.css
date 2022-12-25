@@ -159,6 +159,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*MAIN*/
+#on_top_but {
+    width: 50px;
+    position: fixed;
+    left: 5pt;
+    bottom: 5pt;
+    opacity: .7;
+    z-index: 9999;
+}
+
+#on_top_but:hover {
+    opacity:1;
+}
+
 /* Start content */
 .wrapper {
     width: 100%;
